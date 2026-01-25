@@ -310,6 +310,7 @@
       }
     }
 
+    /* Scroll indicator - solo móvil */
     .scroll-down {
       display: none;
     }
@@ -317,24 +318,14 @@
     @media (max-width: 768px) {
       .scroll-down {
         display: block !important;
-        position: absolute;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%);
         animation: bounce 2s infinite;
-        z-index: 10;
-      }
-
-      .scroll-down a {
-        color: white;
-        font-size: 2rem;
       }
     }
 
     @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-      40% { transform: translateX(-50%) translateY(-10px); }
-      60% { transform: translateX(-50%) translateY(-5px); }
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-10px); }
+      60% { transform: translateY(-5px); }
     }
 
   </style>
@@ -371,15 +362,15 @@
         <a href="https://twitter.com/JuanDelber" target="_blank" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
         <a href="https://www.instagram.com/juan.d.delgado.52/" target="_blank" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
       </div>
+
+      <div class="scroll-down">
+        <a href="#about" class="scrollto">
+          <i class="bi bi-chevron-down"></i>
+        </a>
+      </div>
+
+
     </div>
-
-    <div class="scroll-down">
-      <a href="#about" class="scrollto">
-        <i class="bi bi-chevron-down"></i>
-      </a>
-    </div>
-
-
   </section>
 
   <main id="main">

@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Juan Delgado - Quality Engineer & International Speaker</title>
+  <meta content="Senior Quality Engineer with 15+ years, international speaker, and open-source contributor" name="description">
+  <meta content="QA, Test Automation, SDET, Python, IoT, Conference Speaker" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/jdicon.png" rel="icon" type="image/png">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-color: #0066cc;
+      --secondary-color: #149ddd;
+      --accent-color: #00a8cc;
+      --dark-text: #2c3e50;
+      --light-bg: #ffffff;
+      --card-bg: #f8f9fa;
+      --border-color: #e1e8ed;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--light-bg);
+      color: var(--dark-text);
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Archivo Black', sans-serif;
+      letter-spacing: -0.02em;
+      color: var(--dark-text);
+    }
+
+    .hero-title {
+      font-size: 4.5rem;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.3;
+      padding-bottom: 0.2em;
+    }
+
+    .tagline {
+      font-family: 'Space Mono', monospace;
+      font-size: 1.3rem;
+      color: var(--primary-color);
+      margin-top: 1rem;
+      font-weight: 700;
+    }
+
+    .stat-box {
+      background: var(--card-bg);
+      border-left: 4px solid var(--secondary-color);
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .stat-box:hover {
+      transform: translateX(10px);
+      border-left-width: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    }
+
+    .stat-number {
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 3rem;
+      color: var(--secondary-color);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.9rem;
+      color: var(--primary-color);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .section-title-custom {
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 3rem;
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .experience-card {
+      background: var(--light-bg);
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 2rem 0;
+      border: 2px solid var(--border-color);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .experience-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    }
+
+    .experience-card:hover {
+      border-color: var(--primary-color);
+      box-shadow: 0 8px 24px rgba(0, 102, 204, 0.15);
+      transform: translateY(-5px);
+    }
+
+    .company-name {
+      font-family: 'Archivo Black', sans-serif;
+      color: var(--secondary-color);
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .role-title {
+      color: var(--primary-color);
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .date-range {
+      font-family: 'Space Mono', monospace;
+      color: #6c757d;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .talk-card {
+      background: var(--light-bg);
+      border-radius: 15px;
+      padding: 2rem;
+      margin: 1.5rem 0;
+      border: 2px solid var(--border-color);
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .talk-card:hover {
+      border-color: var(--primary-color);
+      box-shadow: 0 8px 24px rgba(0, 102, 204, 0.15);
+      transform: scale(1.02);
+    }
+
+    .talk-title {
+      font-family: 'Archivo Black', sans-serif;
+      color: var(--primary-color);
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .talk-event {
+      font-family: 'Space Mono', monospace;
+      color: var(--secondary-color);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--card-bg);
+      color: var(--primary-color);
+      padding: 0.3rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin: 0.3rem;
+      border: 1px solid var(--primary-color);
+      font-family: 'Space Mono', monospace;
+    }
+
+    .highlight-box {
+      background: linear-gradient(135deg, rgba(0, 168, 204, 0.08), rgba(255, 107, 53, 0.08));
+      border-left: 5px solid var(--secondary-color);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 8px;
+      font-style: italic;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .project-showcase {
+      background: var(--light-bg);
+      border: 2px solid var(--border-color);
+      border-radius: 15px;
+      padding: 2rem;
+      margin: 1.5rem 0;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+    }
+
+    .project-showcase:hover {
+      border-color: var(--secondary-color);
+      box-shadow: 0 8px 24px rgba(255, 107, 53, 0.15);
+    }
+
+    .project-showcase::after {
+      content: '🚀';
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 3rem;
+      opacity: 0.15;
+    }
+
+    .contact-item {
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border: 1px solid var(--border-color);
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .contact-item:hover {
+      border-color: var(--primary-color);
+      box-shadow: 0 5px 20px rgba(0, 102, 204, 0.15);
+    }
+
+    .contact-item i {
+      color: var(--secondary-color);
+      font-size: 1.5rem;
+      margin-right: 1rem;
+    }
+
+    .about-highlight {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: var(--dark-text);
+    }
+
+    .about-highlight strong {
+      color: var(--primary-color);
+      font-weight: 700;
+    }
+
+    .personality-trait {
+      background: rgba(255, 107, 53, 0.08);
+      border-left: 3px solid var(--secondary-color);
+      padding: 1rem 1.5rem;
+      margin: 1rem 0;
+      border-radius: 5px;
+      font-size: 1.05rem;
+    }
+
+    .personality-trait i {
+      color: var(--secondary-color);
+      margin-right: 0.8rem;
+      font-size: 1.2rem;
+    }
+
+    .section-bg {
+      background: var(--card-bg);
+    }
+
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2.5rem;
+      }
+      .section-title-custom {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Mobile Navigation Toggle -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- Header Navigation -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#experience" class="nav-link scrollto"><i class="bx bx-briefcase"></i> <span>Experience</span></a></li>
+        <li><a href="#talks" class="nav-link scrollto"><i class="bx bx-microphone"></i> <span>Talks</span></a></li>
+        <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-code-alt"></i> <span>Projects</span></a></li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1 class="hero-title">Juan Delgado</h1>
+      <p><span class="typed" data-typed-items="Test Consultant, Test Automation, Quality Assurance Engineer, Software Development Engineer in Test, BugHunter, Open-Source Contributor, International Speaker"></span></p>
+      <div class="social-links mt-4">
+        <a href="https://github.com/juandelgadobernal" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/juan-de-dios-delgado-bernal-0633aa14/" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://twitter.com/JuanDelber" target="_blank" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.instagram.com/juan.d.delgado.52/" target="_blank" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- About Section -->
+    <section id="about" class="about section-bg py-5">
+      <div class="container" data-aos="fade-up">
+
+        <h2 class="section-title-custom text-center mb-5">The Journey</h2>
+
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <img src="assets/img/family_delgado2.png" class="img-fluid rounded mb-3" alt="Juan Delgado with family" style="border: 3px solid var(--primary-color); box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+
+            <img src="assets/img/family_delgado1.png" class="img-fluid rounded mb-3" alt="Juan at conference" style="border: 3px solid var(--primary-color); box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+
+            <img src="assets/img/family_delgado3.jpg" class="img-fluid rounded mb-3" alt="Teaching robotics" style="border: 3px solid var(--primary-color); box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+
+          </div>
+
+          <div class="col-lg-8">
+            <div class="about-highlight mb-4">
+              <p><strong>Senior Quality Engineer</strong> with <strong>15+ years</strong> of experience working on quality strategy, test automation, and delivery across web, mobile, APIs, cloud, and IoT platforms.</p>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-md-4">
+                <div class="stat-box">
+                  <div class="stat-number">15+</div>
+                  <div class="stat-label">Years in QA</div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="stat-box">
+                  <div class="stat-number">10+</div>
+                  <div class="stat-label">Conference Talks</div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="stat-box">
+                  <div class="stat-number">3</div>
+                  <div class="stat-label">Continents</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="highlight-box">
+              <strong>🏆 Recent Achievement:</strong> 3rd Place at INCYTEA 2024 with OHTLI, a game concept inspired by Mictlán, the Aztec underworld.
+              <div class="mt-2">
+                <a href="https://www.facebook.com/INCyTEA/posts/el-instituto-de-ciencia-y-tecnolog%C3%ADa-del-estado-incytea-reconoci%C3%B3-a-las-y-los-ga/1185007086520806/" target="_blank" class="btn btn-sm btn-outline-primary me-2">
+                  <i class="bi bi-award"></i> Official Post
+                </a>
+                <a href="https://youtu.be/SYbv2BotZR4" target="_blank" class="btn btn-sm btn-outline-primary">
+                  <i class="bx bxl-youtube"></i> Watch Video
+                </a>
+              </div>
+            </div>
+
+            <h3 style="color: var(--secondary-color); font-family: 'Archivo Black', sans-serif; margin-top: 2rem;">Beyond the Code</h3>
+
+            <div class="personality-trait">
+              <i class="bi bi-heart-fill"></i> <strong>Family First:</strong> Married to an amazing woman (a lawyer and full-time mom) proud father of three princesses and one little champ
+            </div>
+
+            <div class="personality-trait">
+              <i class="bi bi-people-fill"></i> <strong>Family Roots:</strong> Close to my roots and family values
+            </div>
+
+            <div class="personality-trait">
+              <i class="bx bxs-plane-alt"></i> <strong>Travel Enthusiasts:</strong> Love exploring new places as a family and collecting memories around the world
+            </div>
+
+            <div class="personality-trait">
+              <i class="bi bi-music-note-beamed"></i> <strong>Creative Family:</strong> My son Juan wrote and sang a song with his sisters (produced by Tore) - <a href="#creative-family" class="scrollto" style="color: var(--primary-color);">Watch here</a>
+            </div>
+
+            <div class="personality-trait">
+              <i class="bi bi-robot"></i> <strong>Community Volunteer:</strong> Teaching kids robotics with LEGO Mindstorms EV3
+            </div>
+
+            <div class="personality-trait">
+              <i class="bi bi-mortarboard-fill"></i> <strong>Educator:</strong> University lecturer in Software Quality Assurance & Project Management
+            </div>
+
+            <div class="personality-trait">
+              <i class="bi bi-controller"></i> <strong>Retro Gamer:</strong> Enjoy playing video games and their history, from Atari to modern consoles, often with the family
+            </div>
+
+            <div class="personality-trait">
+              <i class="bi bi-trophy-fill"></i> <strong>Sports Enthusiast:</strong> Boxing and soccer, including training boxing with my son, usually followed by a cold beer and a good steak
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+      <div class="container" data-aos="fade-up">
+
+        <h2 class="section-title-custom text-center mb-5">Career Highlights</h2>
+
+        <div class="accordion" id="experienceAccordion">
+
+          <!-- Grid Dynamics -->
+          <div class="accordion-item experience-card mb-3" data-aos="fade-right">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#job1">
+                <div style="width: 100%;">
+                  <div class="company-name" style="margin-bottom: 0.3rem;">Grid Dynamics</div>
+                  <div class="role-title" style="font-size: 0.95rem;">Senior Quality Assurance Automation Engineer</div>
+
+                  <div class="date-range" style="margin-bottom: 0.3rem;">Oct 2024 - Current • Remote</div>
+                  <div class="date-range">Client: <span class="badge">Google</span></div>
+
+
+
+                </div>
+              </button>
+            </h2>
+            <div id="job1" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Leading test automation and quality practices for IoT products. Developing and maintaining automated test scripts, integrating tests into CI/CD pipelines, and collaborating with distributed cross-functional teams.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Varis -->
+          <div class="accordion-item experience-card mb-3" data-aos="fade-left">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#job2">
+                <div style="width: 100%;">
+                  <div class="company-name" style="margin-bottom: 0.3rem;">Varis</div>
+                  <div class="role-title" style="font-size: 0.95rem;">QA Automation Lead</div>
+                  <div class="date-range" style="margin-bottom: 0.3rem;">Oct 2023 - Oct 2024 • Remote</div>
+                  <div class="date-range">Client: <span class="badge">Office Depot</span></div>
+                </div>
+              </button>
+            </h2>
+            <div id="job2" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Led QA strategy and test automation for Varis digital B2B platform, overseeing manual and automated testing as SDET, guiding UI automation frameworks (POM), integrating tests into CI/CD pipelines, and validating APIs.</p>
+                <p class="mb-2"><small><strong>Client:</strong></small></p>
+                <div>
+                  <span class="badge">Office Depot</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobica -->
+          <div class="accordion-item experience-card mb-3" data-aos="fade-right">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#job3">
+                <div style="width: 100%;">
+                  <div class="company-name" style="margin-bottom: 0.3rem;">Mobica</div>
+                  <div class="role-title" style="font-size: 0.95rem;">Consultant in Test / QAE Lead</div>
+                  <div class="date-range" style="margin-bottom: 0.3rem;">Jul 2015 - Oct 2023 • Seattle WA</div>
+                  <div class="date-range">Client: <span class="badge">Meta/Facebook</span><span class="badge">Verizon</span><span class="badge">T-Mobile</span></div>
+                </div>
+              </button>
+            </h2>
+            <div id="job3" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Supported leading US clients in telecommunications and social media sectors. Worked on Android devices, web applications, AR/VR, and wearable products. Delivered and evolved test automation frameworks using Python with Pytest, integrated tests into CI/CD pipelines, and applied Selenium for UI automation.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="highlight-box mt-5">
+          <strong>💡 Additional Experience:</strong> Bank of America (2011-2015), ICW Group (2010-2011), Santander España (2009-2010), FocusFrame/Hexaware (2007-2009), Softtek (2004-2007) - Over 15 years working with global teams across US, Europe, and LATAM.
+        </div>
+
+      </div>
+    </section>
+
+    <style>
+    .accordion-button {
+      background: transparent !important;
+      color: var(--dark-text) !important;
+      box-shadow: none !important;
+      padding: 1.5rem;
+      border: none !important;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background: transparent !important;
+      color: var(--dark-text) !important;
+    }
+
+    .accordion-button:focus {
+      box-shadow: none !important;
+      border: none !important;
+    }
+
+    .accordion-button::after {
+      color: var(--primary-color);
+    }
+
+    .accordion-item {
+      border: none !important;
+      background: transparent !important;
+    }
+
+    .accordion-body {
+      padding-top: 0;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    .accordion-collapse {
+      border: none !important;
+    }
+    </style>
+
+
+    <!-- Talks & Speaking Section -->
+    <section id="talks" class="section-bg py-5">
+      <div class="container" data-aos="fade-up">
+
+        <h2 class="section-title-custom text-center mb-5">International Speaker</h2>
+
+        <p class="text-center mb-5" style="font-size: 1.2rem; color: var(--dark-text);">
+          Sharing knowledge and practical approaches at conferences across <strong>US, Mexico, and Asia</strong>
+        </p>
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="talk-card">
+              <div class="talk-title">🎤 The QAE Odyssey</div>
+              <div class="talk-event">TiD 2023 · Beijing, China · Aug 2023</div>
+              <p>Explored the QAE/SDET journey, focusing on QA strategy, automation testing for web & Android apps, POM, DevOps, and cloud tools. My first international talk in Asia!</p>
+              <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7096886825926983680/" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
+                  <i class="bx bxl-linkedin"></i> LinkedIn Post #1
+                </a>
+                <a href="https://www.linkedin.com/posts/juan-de-dios-delgado-bernal-0633aa14_tid-china-tid2023-activity-7098760254389186560-N_-i?utm_source=share&utm_medium=member_desktop&rcm=ACoAAALn0csBs1TKmN2fV0AC0YONKyTQfwpxUqE" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
+                  <i class="bx bxl-linkedin"></i> LinkedIn Post #2
+                </a>
+              </div>
+
+
+
+
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="talk-card">
+              <div class="talk-title">🎤 How to Test Alexa? – An Automation Approa</div>
+              <div class="talk-event">PNSQC 2022 · Portland, OR · Oct 2022</div>
+              <p>Presented a Python-based automation framework for end-to-end testing of Alexa wake word detection under different acoustic conditions with Mobica QA team.</p>
+              <a href="https://youtu.be/7_UG7tgV4mc" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
+                <i class="bx bxl-youtube"></i> Watch Talk
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="talk-card">
+              <div class="talk-title">🎤 Android TV: The Conquest of the Testing World</div>
+              <div class="talk-event">ConTEST NYC 2021 · Feb 2021</div>
+              <p>Presented test automation challenges and strategies for Android TV applications. Led technical direction, defined demo scope, while mentoring the engineering team.</p>
+              <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <a href="https://youtu.be/kcCRra0iEEE" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
+                  <i class="bx bxl-youtube"></i> Watch Talk
+                </a>
+                <a href="https://youtu.be/ANvl_i_OPmE" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
+                  <i class="bx bxl-youtube"></i> Watch Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="talk-card">
+              <div class="talk-title">🎤 Testcafe - Grinding Automation Issues</div>
+              <div class="talk-event">PNSQC 2020 · Portland, OR · Oct 2020</div>
+              <p>Deep dive into creating a simple and efficient test automation framework with TestCafe for end-to-end web testing.</p>
+              <a href="https://www.pnsqc.org/archives/testcafe-grinding-automation-issues-an-end-to-end-web-testing-approach/" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
+                <i class="bi bi-file-earmark-text"></i> PNSQC Conference Archive
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="talk-card">
+              <div class="talk-title">🎤 How to Start a Test Automation Framework and Not Die Trying</div>
+              <div class="talk-event">PNSQC 2019 · Portland, OR · Oct 2019</div>
+              <p>Introduced <strong>UP Automation Framework</strong>, an Android open-source project developed with AI engineering students at Universidad Panamericana campus Aguascalientes.</p>
+              <a href="https://www.pnsqc.org/archives/how-to-start-a-test-automation-framework-and-not-die-trying/" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
+                <i class="bi bi-file-earmark-text"></i> PNSQC Conference Archive
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="talk-card">
+              <div class="talk-title">🎤 Mobile Testing Beyond Physical Reach</div>
+              <div class="talk-event">PNSQC 2018 · Portland, OR · Oct 2018</div>
+              <p>Shared experience in automating mobile app testing using <strong>STF (Smartphone Test Farm)</strong>, improving QA efficiency and device coverage.</p>
+              <a href="https://www.pnsqc.org/archives/mobile-testing-beyond-physical-reach/" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
+                <i class="bi bi-file-earmark-text"></i> PNSQC Conference Archive
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="highlight-box mt-4">
+          <strong>&#127909; View recordings:</strong> Many of these talks are available on YouTube and conference archives, please reach out if you would like links to specific presentations!
+          <p class="mb-0"><strong>&#127908; More Talks:</strong> 10+ conference presentations across US, Mexico, and Asia on test automation, mobile testing, and quality engineering. Connect on <a href="https://www.linkedin.com/in/juan-de-dios-delgado-bernal-0633aa14/" target="_blank" style="color: var(--primary-color);">LinkedIn</a> for full speaking history.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects & Contributions -->
+    <section id="projects" class="py-5">
+      <div class="container" data-aos="fade-up">
+
+        <h2 class="section-title-custom text-center mb-5">Projects & Open-Source</h2>
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="project-showcase">
+              <h3 style="color: var(--primary-color); font-family: 'Archivo Black', sans-serif;">🌐 Matter (Project CHIP)</h3>
+              <h4 style="color: var(--secondary-color); margin-bottom: 1rem;">Open-Source Contributor</h4>
+              <p>Contributing to <strong>Matter (Project CHIP)</strong>, the major open-source project for IoT, connected devices, and smart home platforms. Working with a distributed open-source community on test plans, quality practices, and testing within the Matter ecosystem.</p>
+              <a href="https://github.com/juandediosg" target="_blank" class="btn btn-outline-primary mt-3">
+                <i class="bi bi-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="project-showcase">
+              <h3 style="color: var(--secondary-color); font-family: 'Archivo Black', sans-serif;">🎮 Unity 2D Game</h3>
+              <h4 style="color: var(--primary-color); margin-bottom: 1rem;">A Father's Gift</h4>
+              <p>Created a fun <strong>2D endless runner game</strong> in Unity for my son's 7th birthday. This passion project earned <strong>3rd place</strong> at the 2024 State Innovation & Game Development Program (INCYTEA, Aguascalientes).</p>
+              <a href="https://itch.io/embed-upload/5463612?color=333333" target="_blank" class="btn btn-outline-primary mt-3">
+                <i class="bi bi-joystick"></i> Play the Game
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12">
+            <div class="highlight-box">
+              <h4 style="color: var(--secondary-color); font-family: 'Archivo Black', sans-serif;">🎓 Education & Mentorship</h4>
+              <ul>
+                <li><strong>University Lecturer</strong> - Universidad Panamericana & Universidad Tecnológica de Aguascalientes (Software Quality Assurance, Project Management, Development Methodologies)</li>
+                <li><strong>LEGO Robotics Instructor</strong> - Volunteer STEAM program mentor for elementary & middle school students</li>
+                <li><strong>UW Advisory Board</strong> - Member of University of Washington Software Testing Advisory Board</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Creative Family Section -->
+    <section id="creative-family" class="section-bg py-5">
+      <div class="container" data-aos="fade-up">
+
+        <h2 class="section-title-custom text-center mb-5">Creative Family</h2>
+
+        <div class="row align-items-center">
+
+          <div class="col-lg-6 mb-4" data-aos="fade-right">
+            <a href="https://youtu.be/MYsL8zaNaX4" target="_blank" style="display: block; position: relative; text-decoration: none;">
+              <img src="https://img.youtube.com/vi/MYsL8zaNaX4/maxresdefault.jpg"
+                   class="img-fluid rounded"
+                   alt="Baby Monster Song"
+                   style="box-shadow: 0 8px 24px rgba(0,0,0,0.15); width: 100%;">
+              <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <i class="bx bxl-youtube" style="color: #FF0000; font-size: 80px;
+                   filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+                   transition: all 0.3s ease;"></i>
+              </div>
+            </a>
+            <p class="text-center mt-2" style="color: #666; font-size: 0.9rem;">
+              <i class="bx bx-play-circle"></i> Click to watch on YouTube
+            </p>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="project-showcase" style="height: 100%;">
+              <h3 style="color: var(--primary-color); font-family: 'Archivo Black', sans-serif; font-size: 2rem;">🎵 Baby Monster Song</h3>
+              <h4 style="color: var(--secondary-color); margin-bottom: 1.5rem;">Written & Performed by Juan and His Sisters</h4>
+
+              <p style="font-size: 1.1rem; line-height: 1.8;">
+                Beyond engineering and technology, what truly matters is family. I'm incredibly proud to share a song my son <strong>Juan wrote and sang with his sisters</strong>, produced by Tore.
+              </p>
+
+              <div class="mt-4">
+                <span class="badge">Original Song</span>
+                <span class="badge">Family Project</span>
+                <span class="badge">Young Artists</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-bg py-5">
+      <div class="container" data-aos="fade-up">
+
+        <h2 class="section-title-custom text-center mb-5">Let's Connect</h2>
+
+        <div class="row">
+
+          <div class="col-lg-4 mb-3">
+
+            <div class="contact-item">
+              <i class="bi bi-phone"></i>
+              <div class="d-inline-block">
+                <h4 style="color: var(--primary-color); margin: 0;">Phone</h4>
+                <p style="margin: 0;">+52 449 580 4460</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-3">
+
+            <div class="contact-item">
+              <i class="bi bi-envelope"></i>
+              <div class="d-inline-block">
+                <h4 style="color: var(--primary-color); margin: 0;">Email</h4>
+                <p style="margin: 0;"><a href="mailto:juandedios.delgadobernal@gmail.com" style="color: var(--dark-text);">juandedios.delgadobernal.com</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-3">
+
+            <div class="contact-item">
+              <i class="bi bi-geo-alt"></i>
+              <div class="d-inline-block">
+                <h4 style="color: var(--primary-color); margin: 0;">Location</h4>
+                <p style="margin: 0;">Mexico | Remote (US & Europe)</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="py-4" style="background: var(--card-bg);">
+    <div class="container">
+
+      <div class="social-links mb-3">
+        <a href="https://github.com/juandediosg" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/juan-de-dios-delgado-bernal-0633aa14/" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://twitter.com/JuanDelber" target="_blank" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.instagram.com/juan.d.delgado.52/" target="_blank" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+      </div>
+      <div class="copyright" style="color: #6c757d;">
+        &copy; 2025 Juan Delgado.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
